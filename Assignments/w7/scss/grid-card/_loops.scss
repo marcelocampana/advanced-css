@@ -1,0 +1,6 @@
+@for $index from 1 to 10 {
+	.icon-#{$index} {
+		@include icon-($index);
+	}
+}
+

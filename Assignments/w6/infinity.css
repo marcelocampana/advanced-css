@@ -1,0 +1,32 @@
+#lemon{
+      position: relative;
+      width: 460px;
+
+
+}
+#lemon:before, #lemon:after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 140px;
+  width: 60px;
+  height: 60px;
+  border: 10px solid yellow;
+  border-radius: 0 80px 0 80px;
+ 
+  transform: rotate(135deg);
+  box-shadow: 
+	  10px 10px 0 30px #D2D91A,
+      10px 10px 0 40px yellow,
+      10px 10px 0 50px #D2D91A,
+	  10px 10px 0 60px #B6D936,
+	  10px 10px 0 80px #7ABF49;
+      background-color: yellow;
+}
+
+#lemon:after{
+	left: auto;
+    right: 0;
+    transform: rotate(145deg);
+}
+

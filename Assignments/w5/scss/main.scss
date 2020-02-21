@@ -1,0 +1,94 @@
+//SCSS Document
+/* CSS Document */
+/*Created by Marcelo Campaña - Advanced CSS Course*/
+
+//GLOBAL VARIABLES
+//font-color
+$font-color-primary: white;
+$font-color-secondary: #898989;
+$font-accent:#6495ED;
+$font-light-primary: white;
+$font-light-secondary: #FAEBD7;
+$font-light-tertiary: #DEB887;
+
+//font-family
+$primary-font-family: Helvetica, Arial, sans-serif;
+$secondary-font-family: Lora, serif;
+
+//background-color: 
+$background-color-primary: #FAEBD7;
+$background-color-secondary: #6495ED;
+$background-color-terciary: white;
+
+//breakpoints
+$size-small: 576.98px;
+$size-large: 577px;
+
+@mixin variable-selectors($flex-direction, $main-width, $header-width, $img-width ){
+  body div {display: flex; flex-direction: $flex-direction;}
+  main {width: $main-width;}
+  header {height: auto; width: $header-width; }
+  img {width: $img-width;}
+}
+@mixin breakpoint($size) {
+    @if $size == small {
+        @media (max-width: $size-small) { @content; }}
+    @else if  $size == large {
+        @media (min-width: $size-large) { @content; }}
+}
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+body {margin: 0;}
+@include breakpoint(small){ @include variable-selectors(column, 100%, 100%, 100%); }
+@include breakpoint(large){ 
+    @include variable-selectors(row, 75%,25%, 50%); 
+    h2 {font-size: 35px;}
+}
+h1 {margin: 30px 30px 20px 30px; }
+
+h2 a{color:$font-color-primary;text-decoration: none;
+    &:visited{color:$font-color-primary;}
+    &:hover{color:$font-accent; text-decoration: underline;}
+    &:active{color:$font-light-tertiary;}}	         
+main {
+  background-color: $font-light-secondary;
+  font-family: $primary-font-family;
+    & a{color:$font-accent; text-decoration: none;
+            &:visited{color:$font-accent;}
+            &:hover{text-decoration: underline;}
+            &:active{color:$font-light-tertiary;}}
+}
+header {
+  background-color: $background-color-secondary;
+  color: $font-light-secondary;
+  font-family: $secondary-font-family;
+  text-align: right;
+    & a{color:$font-light-secondary; text-decoration: none;
+        &:visited{color:$font-light-secondary;}
+        &:hover{color:$font-light-primary; text-decoration: underline;}
+        &:active{color:$font-light-tertiary;}}
+    & li {list-style: none; margin: 0 0 10px 0;}
+}
+hr {margin: 0 30px 0 30px;}
+nav {margin: 20px 30px 40px 30px;}
+article {
+  background-color: $background-color-terciary;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 8%;
+  width: 84%;
+}
+.post-date {
+  color: $font-color-secondary;
+  padding: 5% 10% 0 10%;
+}
+.post-content {
+  margin: auto;
+  padding: 0 10% 5% 10%;
+}
+figure {
+  padding: 5% 0 5% 0;
+  text-align: center;
+  
+}
+img { margin: auto;}
+

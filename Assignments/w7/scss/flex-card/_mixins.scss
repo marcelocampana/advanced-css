@@ -1,0 +1,7 @@
+/* Scss Document */
+@mixin col($span-num) {
+	flex: 0 0 12.5% * $span-num;
+}   
+@mixin offset($offset-num) {
+	margin-left: 12.5% * $offset-num;
+}

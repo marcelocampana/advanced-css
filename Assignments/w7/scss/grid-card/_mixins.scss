@@ -1,0 +1,4 @@
+@mixin icon-($span-num) {
+	grid-area: icon + ($span-num);
+} 
+

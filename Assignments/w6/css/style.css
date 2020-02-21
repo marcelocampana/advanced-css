@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+.svgcontainer {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+}
+
+    .rectangle {
+          fill:darkred;
+          stroke:black;
+          stroke-width:5;
+          opacity:0.5;
+    }

@@ -1,0 +1,19 @@
+.square {
+  fill: blue;
+  stroke: pink; }
+
+.primary-color-card1 {
+  fill: blue; }
+
+.fill-card1 {
+  fill: grey; }
+
+.primary-color-card2 {
+  fill: Red; }
+
+.sixh-color-card2 {
+  fill: DarkOrange; }
+
+.card-size {
+  width: 400px;
+  height: 600px; }

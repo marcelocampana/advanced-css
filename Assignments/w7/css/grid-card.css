@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.icon-1 {
+  grid-area: icon1; }
+
+.icon-2 {
+  grid-area: icon2; }
+
+.icon-3 {
+  grid-area: icon3; }
+
+.icon-4 {
+  grid-area: icon4; }
+
+.icon-5 {
+  grid-area: icon5; }
+
+.icon-6 {
+  grid-area: icon6; }
+
+.icon-7 {
+  grid-area: icon7; }
+
+.icon-8 {
+  grid-area: icon8; }
+
+.icon-9 {
+  grid-area: icon9; }
+
+.card {
+  border: 1px solid grey;
+  height: 56vw;
+  width: 40vw;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px grey; }
+
+.row {
+  display: grid;
+  grid-template-columns: 12.5% 1fr 1fr 12.5%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "icon1 icon2 icon3 . " " . icon4 icon4 . " " . icon5 icon6 . " " . icon7 icon8 icon9";
+  align-items: center;
+  height: 100%; }
+
+.cell {
+  text-align: center; }
+
+.card-front {
+  padding: .5em; }
+
+.icon {
+  width: 8vw;
+  height: 8vw; }
+
+.number {
+  text-align: center;
+  font-size: 4vw; }
+
+.number > .icon {
+  width: 4vw;
+  height: 4vw; }
+
+.rotate {
+  transform: rotate(180deg); }
